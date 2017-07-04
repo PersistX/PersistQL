@@ -11,6 +11,8 @@
 		BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CB61F0C01030045621F /* PersistQLTests.swift */; };
 		BED65CB91F0C01030045621F /* PersistQL.h in Headers */ = {isa = PBXBuildFile; fileRef = BED65CAB1F0C01030045621F /* PersistQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED65CC31F0C02040045621F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC21F0C02040045621F /* Client.swift */; };
+		BED65CC71F0C02AC0045621F /* GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC61F0C02AC0045621F /* GraphQL.swift */; };
+		BED65CC91F0C02C20045621F /* GraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC81F0C02C20045621F /* GraphQLTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		BED65CB61F0C01030045621F /* PersistQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistQLTests.swift; sourceTree = "<group>"; };
 		BED65CB81F0C01030045621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED65CC21F0C02040045621F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		BED65CC61F0C02AC0045621F /* GraphQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.swift; sourceTree = "<group>"; };
+		BED65CC81F0C02C20045621F /* GraphQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		BED65CAA1F0C01030045621F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BED65CC41F0C02970045621F /* GraphQL */,
 				BED65CC21F0C02040045621F /* Client.swift */,
 				BED65CAB1F0C01030045621F /* PersistQL.h */,
 				BED65CAC1F0C01030045621F /* Info.plist */,
@@ -83,10 +88,27 @@
 		BED65CB51F0C01030045621F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				BED65CC51F0C029E0045621F /* GraphQL */,
 				BED65CB61F0C01030045621F /* PersistQLTests.swift */,
 				BED65CB81F0C01030045621F /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		BED65CC41F0C02970045621F /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				BED65CC61F0C02AC0045621F /* GraphQL.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		BED65CC51F0C029E0045621F /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				BED65CC81F0C02C20045621F /* GraphQLTests.swift */,
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED65CC31F0C02040045621F /* Client.swift in Sources */,
+				BED65CC71F0C02AC0045621F /* GraphQL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */,
+				BED65CC91F0C02C20045621F /* GraphQLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
