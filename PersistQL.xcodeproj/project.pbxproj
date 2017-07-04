@@ -10,6 +10,7 @@
 		BED65CB21F0C01030045621F /* PersistQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CA81F0C01030045621F /* PersistQL.framework */; };
 		BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CB61F0C01030045621F /* PersistQLTests.swift */; };
 		BED65CB91F0C01030045621F /* PersistQL.h in Headers */ = {isa = PBXBuildFile; fileRef = BED65CAB1F0C01030045621F /* PersistQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED65CC31F0C02040045621F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC21F0C02040045621F /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BED65CB11F0C01030045621F /* PersistQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED65CB61F0C01030045621F /* PersistQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistQLTests.swift; sourceTree = "<group>"; };
 		BED65CB81F0C01030045621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED65CC21F0C02040045621F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		BED65CAA1F0C01030045621F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BED65CC21F0C02040045621F /* Client.swift */,
 				BED65CAB1F0C01030045621F /* PersistQL.h */,
 				BED65CAC1F0C01030045621F /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					BED65CA71F0C01030045621F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					BED65CB01F0C01030045621F = {
 						CreatedOnToolsVersion = 9.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED65CC31F0C02040045621F /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +332,7 @@
 		BED65CBD1F0C01030045621F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -340,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.PersistQL;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -347,6 +354,7 @@
 		BED65CBE1F0C01030045621F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -367,6 +375,7 @@
 		BED65CC01F0C01030045621F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -379,6 +388,7 @@
 		BED65CC11F0C01030045621F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
