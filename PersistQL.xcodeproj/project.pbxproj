@@ -13,6 +13,10 @@
 		BED65CC31F0C02040045621F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC21F0C02040045621F /* Client.swift */; };
 		BED65CC71F0C02AC0045621F /* GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC61F0C02AC0045621F /* GraphQL.swift */; };
 		BED65CC91F0C02C20045621F /* GraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CC81F0C02C20045621F /* GraphQLTests.swift */; };
+		BED65CCF1F0C05A40045621F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCB1F0C05890045621F /* Result.framework */; };
+		BED65CD01F0C05A40045621F /* Schemata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCE1F0C059E0045621F /* Schemata.framework */; };
+		BED65CD11F0C05E90045621F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCB1F0C05890045621F /* Result.framework */; };
+		BED65CD21F0C05E90045621F /* Schemata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCE1F0C059E0045621F /* Schemata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 		BED65CC21F0C02040045621F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		BED65CC61F0C02AC0045621F /* GraphQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.swift; sourceTree = "<group>"; };
 		BED65CC81F0C02C20045621F /* GraphQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLTests.swift; sourceTree = "<group>"; };
+		BED65CCB1F0C05890045621F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED65CCE1F0C059E0045621F /* Schemata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Schemata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED65CCF1F0C05A40045621F /* Result.framework in Frameworks */,
+				BED65CD01F0C05A40045621F /* Schemata.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED65CD11F0C05E90045621F /* Result.framework in Frameworks */,
+				BED65CD21F0C05E90045621F /* Schemata.framework in Frameworks */,
 				BED65CB21F0C01030045621F /* PersistQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +72,7 @@
 				BED65CAA1F0C01030045621F /* Source */,
 				BED65CB51F0C01030045621F /* Tests */,
 				BED65CA91F0C01030045621F /* Products */,
+				BED65CCA1F0C05890045621F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +120,15 @@
 				BED65CC81F0C02C20045621F /* GraphQLTests.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		BED65CCA1F0C05890045621F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED65CCB1F0C05890045621F /* Result.framework */,
+				BED65CCE1F0C059E0045621F /* Schemata.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
