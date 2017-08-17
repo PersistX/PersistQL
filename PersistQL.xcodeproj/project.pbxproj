@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BEB669841F4526E10061B9A7 /* GraphQL.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */; };
 		BEB669861F4529420061B9A7 /* GraphQL.NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */; };
+		BEB6698A1F4529EA0061B9A7 /* GraphQL.VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669891F4529EA0061B9A7 /* GraphQL.VariableTests.swift */; };
+		BEB6698B1F4529EE0061B9A7 /* GraphQL.Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669871F4529950061B9A7 /* GraphQL.Variable.swift */; };
 		BED65CB21F0C01030045621F /* PersistQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CA81F0C01030045621F /* PersistQL.framework */; };
 		BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED65CB61F0C01030045621F /* PersistQLTests.swift */; };
 		BED65CB91F0C01030045621F /* PersistQL.h in Headers */ = {isa = PBXBuildFile; fileRef = BED65CAB1F0C01030045621F /* PersistQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Name.swift; sourceTree = "<group>"; };
 		BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.NameTests.swift; sourceTree = "<group>"; };
+		BEB669871F4529950061B9A7 /* GraphQL.Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Variable.swift; sourceTree = "<group>"; };
+		BEB669891F4529EA0061B9A7 /* GraphQL.VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.VariableTests.swift; sourceTree = "<group>"; };
 		BED65CA81F0C01030045621F /* PersistQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED65CAB1F0C01030045621F /* PersistQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistQL.h; sourceTree = "<group>"; };
 		BED65CAC1F0C01030045621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			children = (
 				BED65CC61F0C02AC0045621F /* GraphQL.swift */,
 				BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */,
+				BEB669871F4529950061B9A7 /* GraphQL.Variable.swift */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			children = (
 				BED65CC81F0C02C20045621F /* GraphQLTests.swift */,
 				BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */,
+				BEB669891F4529EA0061B9A7 /* GraphQL.VariableTests.swift */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB6698B1F4529EE0061B9A7 /* GraphQL.Variable.swift in Sources */,
 				BED65CC31F0C02040045621F /* Client.swift in Sources */,
 				BEB669841F4526E10061B9A7 /* GraphQL.Name.swift in Sources */,
 				BED65CC71F0C02AC0045621F /* GraphQL.swift in Sources */,
@@ -259,6 +266,7 @@
 				BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */,
 				BEB669861F4529420061B9A7 /* GraphQL.NameTests.swift in Sources */,
 				BED65CC91F0C02C20045621F /* GraphQLTests.swift in Sources */,
+				BEB6698A1F4529EA0061B9A7 /* GraphQL.VariableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
