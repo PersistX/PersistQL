@@ -3,7 +3,7 @@ import XCTest
 
 class GraphQLValueTests: XCTestCase {
     func testVariableDescription() {
-        let variable = GraphQL.Variable(GraphQL.Name("mdiep"))
+        let variable = GraphQL.Variable("mdiep")
         let value = GraphQL.Value.variable(variable)
         XCTAssertEqual(value.description, variable.description)
     }
@@ -38,7 +38,7 @@ class GraphQLValueTests: XCTestCase {
     
     func testListDescription() {
         let value = GraphQL.Value.list([
-            .variable(GraphQL.Variable(GraphQL.Name("mdiep"))),
+            .variable(GraphQL.Variable("mdiep")),
             .int(5),
             .float(3.14),
         ])
@@ -47,8 +47,8 @@ class GraphQLValueTests: XCTestCase {
     
     func testObjectDescription() {
         let value = GraphQL.Value.object([
-            GraphQL.Name("foo"): .int(5),
-            GraphQL.Name("bar"): .float(3.14),
+            "foo": .int(5),
+            "bar": .float(3.14),
         ])
         let permutations = [
             "{ foo: 5, bar: 3.14 }",

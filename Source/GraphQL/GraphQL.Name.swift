@@ -29,3 +29,9 @@ extension GraphQL.Name: CustomStringConvertible {
         return string
     }
 }
+
+extension GraphQL.Name: ExpressibleByStringLiteral {
+    init(stringLiteral value: String) {
+        self.init(value)
+    }
+}
