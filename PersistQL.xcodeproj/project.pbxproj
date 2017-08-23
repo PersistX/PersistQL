@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE958BD31F4D2D0A009872F2 /* GraphQL.Fragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */; };
+		BE958BD51F4D2E21009872F2 /* GraphQL.FragmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */; };
 		BEB669841F4526E10061B9A7 /* GraphQL.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */; };
 		BEB669861F4529420061B9A7 /* GraphQL.NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */; };
 		BEB6698A1F4529EA0061B9A7 /* GraphQL.VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669891F4529EA0061B9A7 /* GraphQL.VariableTests.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Fragment.swift; sourceTree = "<group>"; };
+		BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.FragmentTests.swift; sourceTree = "<group>"; };
 		BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Name.swift; sourceTree = "<group>"; };
 		BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.NameTests.swift; sourceTree = "<group>"; };
 		BEB669871F4529950061B9A7 /* GraphQL.Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Variable.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			children = (
 				BED65CC61F0C02AC0045621F /* GraphQL.swift */,
 				BEB669901F464A940061B9A7 /* GraphQL.Field.swift */,
+				BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */,
 				BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */,
 				BEB669941F464ADA0061B9A7 /* GraphQL.Selection.swift */,
 				BEB6698C1F452B2F0061B9A7 /* GraphQL.Value.swift */,
@@ -144,6 +149,7 @@
 			children = (
 				BED65CC81F0C02C20045621F /* GraphQLTests.swift */,
 				BEB6699A1F464B4C0061B9A7 /* GraphQL.FieldTests.swift */,
+				BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */,
 				BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */,
 				BEB669961F464B350061B9A7 /* GraphQL.SelectionTests.swift */,
 				BEB6698E1F452CA90061B9A7 /* GraphQL.ValueTests.swift */,
@@ -272,6 +278,7 @@
 			files = (
 				BEB6698D1F452B2F0061B9A7 /* GraphQL.Value.swift in Sources */,
 				BEB6698B1F4529EE0061B9A7 /* GraphQL.Variable.swift in Sources */,
+				BE958BD31F4D2D0A009872F2 /* GraphQL.Fragment.swift in Sources */,
 				BED65CC31F0C02040045621F /* Client.swift in Sources */,
 				BEB669911F464A940061B9A7 /* GraphQL.Field.swift in Sources */,
 				BEB669951F464ADA0061B9A7 /* GraphQL.Selection.swift in Sources */,
@@ -286,6 +293,7 @@
 			files = (
 				BED65CB71F0C01030045621F /* PersistQLTests.swift in Sources */,
 				BEB669971F464B350061B9A7 /* GraphQL.SelectionTests.swift in Sources */,
+				BE958BD51F4D2E21009872F2 /* GraphQL.FragmentTests.swift in Sources */,
 				BEB669861F4529420061B9A7 /* GraphQL.NameTests.swift in Sources */,
 				BED65CC91F0C02C20045621F /* GraphQLTests.swift in Sources */,
 				BEB6698A1F4529EA0061B9A7 /* GraphQL.VariableTests.swift in Sources */,
