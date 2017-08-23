@@ -5,6 +5,7 @@ extension GraphQL {
     enum Selection {
         case field(Field)
         case fragment(Name)
+        case inlineFragment(type: Name, SelectionSet)
     }
 }
 
@@ -15,6 +16,8 @@ extension GraphQL.Selection: Hashable {
             return field.hashValue
         case let .fragment(name):
             return name.hashValue
+        case let .inlineFragment(name, selectionSet):
+            return name.hashValue ^ selectionSet.map { $0.hashValue }.reduce(0, ^)
         }
     }
     
@@ -24,6 +27,8 @@ extension GraphQL.Selection: Hashable {
             return lhs == rhs
         case let (.fragment(lhs), .fragment(rhs)):
             return lhs == rhs
+        case let (.inlineFragment(lhsType, lhsSet), .inlineFragment(rhsType, rhsSet)):
+            return lhsType == rhsType && lhsSet == rhsSet
         default:
             return false
         }
@@ -37,6 +42,10 @@ extension GraphQL.Selection: CustomStringConvertible {
             return field.description
         case let .fragment(name):
             return "...\(name)"
+        case let .inlineFragment(type, selectionSet):
+            return "... on \(type) { "
+                + selectionSet.map { $0.description }.joined(separator: " ")
+                + " }"
         }
     }
 }
