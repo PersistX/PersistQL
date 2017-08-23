@@ -7,6 +7,11 @@ class GraphQLSelectionDescriptionTests: XCTestCase {
         let selection = GraphQL.Selection.field(field)
         XCTAssertEqual(selection.description, field.description)
     }
+    
+    func testFragment() {
+        let selection = GraphQL.Selection.fragment("foo")
+        XCTAssertEqual(selection.description, "...foo")
+    }
 }
 
 
