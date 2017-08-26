@@ -15,6 +15,29 @@ extension GraphQL {
     }
 }
 
+extension GraphQL.Value {
+    init(_ constant: GraphQL.Constant) {
+        switch constant {
+        case let .int(int):
+            self = .int(int)
+        case let .float(float):
+            self = .float(float)
+        case let .string(string):
+            self = .string(string)
+        case let .boolean(boolean):
+            self = .boolean(boolean)
+        case .null:
+            self = .null
+        case let .enum(value):
+            self = .enum(value)
+        case let .list(list):
+            self = .list(list.map(GraphQL.Value.init))
+        case let .object(object):
+            self = .object(object.mapValues(GraphQL.Value.init))
+        }
+    }
+}
+
 extension GraphQL.Value: Hashable {
     var hashValue: Int {
         switch self {
