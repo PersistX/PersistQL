@@ -5,7 +5,7 @@ extension GraphQL {
     struct SelectionSet {
         let selections: Set<Selection>
         
-        init(_ selections: Set<Selection>) {
+        init<C: Collection>(_ selections: C) where C.Element == Selection {
             var fields: [Field: SelectionSet?] = [:]
             var merged: Set<Selection> = []
             
