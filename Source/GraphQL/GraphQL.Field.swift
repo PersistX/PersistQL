@@ -32,11 +32,10 @@ extension GraphQL {
 extension GraphQL.Field: Hashable {
     var hashValue: Int {
         let arguments = self.arguments?.map { $0.key.hashValue ^ $0.value.hashValue }.reduce(0, ^)
-        let selectionSet = self.selectionSet?.map { $0.hashValue }.reduce(0, ^)
         return (alias?.hashValue ?? 0)
             ^ name.hashValue
             ^ (arguments ?? 0)
-            ^ (selectionSet ?? 0)
+            ^ (selectionSet?.hashValue ?? 0)
     }
     
     static func ==(lhs: GraphQL.Field, rhs: GraphQL.Field) -> Bool {
@@ -68,7 +67,7 @@ extension GraphQL.Field: CustomStringConvertible {
         }
         
         if let selectionSet = selectionSet {
-            result += " { " + selectionSet.map { $0.description }.joined(separator: " ") + " }"
+            result += " { \(selectionSet) }"
         }
         
         return result

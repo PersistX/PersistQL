@@ -60,7 +60,6 @@ extension GraphQL.Operation: Hashable {
 
 extension GraphQL.Operation: CustomStringConvertible {
     var description: String {
-        let selectionSet = self.selectionSet.map { $0.description }.joined(separator: " ")
         return "\(type) "
             + (name.map { "\($0) " } ?? "")
             + "{ \(selectionSet) }"

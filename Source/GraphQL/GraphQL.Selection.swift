@@ -17,7 +17,7 @@ extension GraphQL.Selection: Hashable {
         case let .fragment(name):
             return name.hashValue
         case let .inlineFragment(name, selectionSet):
-            return name.hashValue ^ selectionSet.map { $0.hashValue }.reduce(0, ^)
+            return name.hashValue ^ selectionSet.hashValue
         }
     }
     
@@ -43,9 +43,7 @@ extension GraphQL.Selection: CustomStringConvertible {
         case let .fragment(name):
             return "...\(name)"
         case let .inlineFragment(type, selectionSet):
-            return "... on \(type) { "
-                + selectionSet.map { $0.description }.joined(separator: " ")
-                + " }"
+            return "... on \(type) { \(selectionSet) }"
         }
     }
 }

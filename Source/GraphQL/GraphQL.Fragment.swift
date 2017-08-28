@@ -28,8 +28,6 @@ extension GraphQL.Fragment: Hashable {
 
 extension GraphQL.Fragment: CustomStringConvertible {
     var description: String {
-        return "fragment \(name) on \(type) { "
-            + selectionSet.map { $0.description }.joined(separator: " ")
-            + " }"
+        return "fragment \(name) on \(type) { \(selectionSet) }"
     }
 }

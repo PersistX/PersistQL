@@ -2,7 +2,6 @@ import Foundation
 
 internal struct GraphQL {
     typealias Arguments = [Name: Value]
-    typealias SelectionSet = Set<Selection>
     
     let operations: [Operation]
     let fragments: [Fragment]
