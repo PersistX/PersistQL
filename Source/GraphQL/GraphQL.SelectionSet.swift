@@ -6,7 +6,42 @@ extension GraphQL {
         let selections: Set<Selection>
         
         init(_ selections: Set<Selection>) {
-            self.selections = selections
+            var fields: [Field: SelectionSet?] = [:]
+            var merged: Set<Selection> = []
+            
+            for selection in selections {
+                switch selection {
+                case .fragment, .inlineFragment:
+                    merged.insert(selection)
+                    
+                case let .field(field):
+                    var copy = field
+                    copy.selectionSet = nil
+                    
+                    if let set = fields[copy] {
+                        let merged: SelectionSet?
+                        switch (field.selectionSet, set) {
+                        case let (nil, set?), let (set?, nil):
+                            merged = set
+                        case (nil, nil):
+                            merged = nil
+                        case let (set1?, set2?):
+                            merged = SelectionSet(set1.selections.union(set2.selections))
+                        }
+                        fields[copy] = merged
+                    } else {
+                        fields[copy] = field.selectionSet
+                    }
+                }
+            }
+            
+            for (field, set) in fields {
+                var copy = field
+                copy.selectionSet = set
+                merged.insert(.field(copy))
+            }
+            
+            self.selections = merged
         }
     }
 }

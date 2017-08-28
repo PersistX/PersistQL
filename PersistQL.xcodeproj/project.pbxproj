@@ -13,6 +13,7 @@
 		BE101C691F5254BF00FEB1A4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C681F5254BF00FEB1A4 /* Query.swift */; };
 		BE101C701F535DD400FEB1A4 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C6F1F535DD400FEB1A4 /* Fixtures.swift */; };
 		BE101C741F539BC600FEB1A4 /* GraphQL.SelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C731F539BC600FEB1A4 /* GraphQL.SelectionSet.swift */; };
+		BE101C761F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C751F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift */; };
 		BE958BD31F4D2D0A009872F2 /* GraphQL.Fragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */; };
 		BE958BD51F4D2E21009872F2 /* GraphQL.FragmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */; };
 		BEB669841F4526E10061B9A7 /* GraphQL.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */; };
@@ -53,6 +54,7 @@
 		BE101C681F5254BF00FEB1A4 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		BE101C6F1F535DD400FEB1A4 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		BE101C731F539BC600FEB1A4 /* GraphQL.SelectionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.SelectionSet.swift; sourceTree = "<group>"; };
+		BE101C751F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.SelectionSetTests.swift; sourceTree = "<group>"; };
 		BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Fragment.swift; sourceTree = "<group>"; };
 		BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.FragmentTests.swift; sourceTree = "<group>"; };
 		BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Name.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				BEB669851F4529420061B9A7 /* GraphQL.NameTests.swift */,
 				BE101C641F52053900FEB1A4 /* GraphQL.OperationTests.swift */,
 				BEB669961F464B350061B9A7 /* GraphQL.SelectionTests.swift */,
+				BE101C751F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift */,
 				BEB6698E1F452CA90061B9A7 /* GraphQL.ValueTests.swift */,
 				BEB669891F4529EA0061B9A7 /* GraphQL.VariableTests.swift */,
 			);
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE101C761F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift in Sources */,
 				BEB669971F464B350061B9A7 /* GraphQL.SelectionTests.swift in Sources */,
 				BE958BD51F4D2E21009872F2 /* GraphQL.FragmentTests.swift in Sources */,
 				BE101C701F535DD400FEB1A4 /* Fixtures.swift in Sources */,
