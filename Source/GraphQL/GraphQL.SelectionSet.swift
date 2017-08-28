@@ -4,6 +4,10 @@ extension GraphQL {
     /// A set of fields and fragments to be selected.
     struct SelectionSet {
         let selections: Set<Selection>
+        
+        init(_ selections: Set<Selection>) {
+            self.selections = selections
+        }
     }
 }
 
@@ -25,6 +29,6 @@ extension GraphQL.SelectionSet: CustomStringConvertible {
 
 extension GraphQL.SelectionSet: ExpressibleByArrayLiteral {
     init(arrayLiteral elements: GraphQL.Selection...) {
-        selections = Set(elements)
+        self.init(Set(elements))
     }
 }
