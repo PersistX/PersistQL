@@ -36,4 +36,22 @@ class ProjectionValueForJSONTests: XCTestCase {
         
         XCTAssertEqual(actual.value, expected)
     }
+    
+    func testToOneOptional() {
+    }
+    
+    func testToMany() {
+    }
+    
+    func testDateValue() {
+    }
+    
+    func testDoubleValue() {
+    }
+    
+    func testIntValue() {
+    }
+    
+    func testNullValue() {
+    }
 }
