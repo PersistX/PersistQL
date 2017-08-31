@@ -2,7 +2,7 @@ import Foundation
 
 extension GraphQL {
     /// A constant value in a GraphQL document.
-    enum Constant {
+    public enum Constant {
         case int(Int)
         case float(Float)
         case string(String)
@@ -15,17 +15,17 @@ extension GraphQL {
 }
 
 extension GraphQL.Constant: Hashable {
-    var hashValue: Int {
+    public var hashValue: Int {
         return GraphQL.Value(self).hashValue
     }
     
-    static func ==(lhs: GraphQL.Constant, rhs: GraphQL.Constant) -> Bool {
+    public static func ==(lhs: GraphQL.Constant, rhs: GraphQL.Constant) -> Bool {
         return GraphQL.Value(lhs) == GraphQL.Value(rhs)
     }
 }
 
 extension GraphQL.Constant: CustomStringConvertible {
-    var description: String {
+    public var description: String {
         return GraphQL.Value(self).description
     }
 }
