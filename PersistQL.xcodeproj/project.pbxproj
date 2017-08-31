@@ -13,9 +13,9 @@
 		BE101C691F5254BF00FEB1A4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C681F5254BF00FEB1A4 /* Query.swift */; };
 		BE101C6E1F535D7A00FEB1A4 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C6D1F535D7900FEB1A4 /* Projection.swift */; };
 		BE101C701F535DD400FEB1A4 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C6F1F535DD400FEB1A4 /* Fixtures.swift */; };
+		BE101C721F535E5400FEB1A4 /* ProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C711F535E5400FEB1A4 /* ProjectionTests.swift */; };
 		BE101C741F539BC600FEB1A4 /* GraphQL.SelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C731F539BC600FEB1A4 /* GraphQL.SelectionSet.swift */; };
 		BE101C761F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C751F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift */; };
-		BE101C721F535E5400FEB1A4 /* ProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE101C711F535E5400FEB1A4 /* ProjectionTests.swift */; };
 		BE958BD31F4D2D0A009872F2 /* GraphQL.Fragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */; };
 		BE958BD51F4D2E21009872F2 /* GraphQL.FragmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */; };
 		BEB669841F4526E10061B9A7 /* GraphQL.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */; };
@@ -37,6 +37,8 @@
 		BED65CD01F0C05A40045621F /* Schemata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCE1F0C059E0045621F /* Schemata.framework */; };
 		BED65CD11F0C05E90045621F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCB1F0C05890045621F /* Result.framework */; };
 		BED65CD21F0C05E90045621F /* Schemata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED65CCE1F0C059E0045621F /* Schemata.framework */; };
+		BED7BFDE1F56D85D008058E2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7BFDD1F56D85D008058E2 /* Request.swift */; };
+		BED7BFE41F583C65008058E2 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7BFE31F583C65008058E2 /* RequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +58,9 @@
 		BE101C681F5254BF00FEB1A4 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		BE101C6D1F535D7900FEB1A4 /* Projection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
 		BE101C6F1F535DD400FEB1A4 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		BE101C711F535E5400FEB1A4 /* ProjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionTests.swift; sourceTree = "<group>"; };
 		BE101C731F539BC600FEB1A4 /* GraphQL.SelectionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.SelectionSet.swift; sourceTree = "<group>"; };
 		BE101C751F539DDB00FEB1A4 /* GraphQL.SelectionSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.SelectionSetTests.swift; sourceTree = "<group>"; };
-		BE101C711F535E5400FEB1A4 /* ProjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionTests.swift; sourceTree = "<group>"; };
 		BE958BD21F4D2D0A009872F2 /* GraphQL.Fragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Fragment.swift; sourceTree = "<group>"; };
 		BE958BD41F4D2E21009872F2 /* GraphQL.FragmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.FragmentTests.swift; sourceTree = "<group>"; };
 		BEB669831F4526E10061B9A7 /* GraphQL.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQL.Name.swift; sourceTree = "<group>"; };
@@ -81,6 +83,8 @@
 		BED65CC81F0C02C20045621F /* GraphQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLTests.swift; sourceTree = "<group>"; };
 		BED65CCB1F0C05890045621F /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED65CCE1F0C059E0045621F /* Schemata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Schemata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED7BFDD1F56D85D008058E2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BED7BFE31F583C65008058E2 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				BED65CC21F0C02040045621F /* Client.swift */,
 				BE101C681F5254BF00FEB1A4 /* Query.swift */,
 				BE101C6D1F535D7900FEB1A4 /* Projection.swift */,
+				BED7BFDD1F56D85D008058E2 /* Request.swift */,
 				BED65CAB1F0C01030045621F /* PersistQL.h */,
 				BED65CAC1F0C01030045621F /* Info.plist */,
 			);
@@ -144,6 +149,7 @@
 				BED65CC51F0C029E0045621F /* GraphQL */,
 				BE101C6F1F535DD400FEB1A4 /* Fixtures.swift */,
 				BE101C711F535E5400FEB1A4 /* ProjectionTests.swift */,
+				BED7BFE31F583C65008058E2 /* RequestTests.swift */,
 				BED65CB81F0C01030045621F /* Info.plist */,
 			);
 			path = Tests;
@@ -306,6 +312,7 @@
 				BEB6698B1F4529EE0061B9A7 /* GraphQL.Variable.swift in Sources */,
 				BE958BD31F4D2D0A009872F2 /* GraphQL.Fragment.swift in Sources */,
 				BED65CC31F0C02040045621F /* Client.swift in Sources */,
+				BED7BFDE1F56D85D008058E2 /* Request.swift in Sources */,
 				BE101C691F5254BF00FEB1A4 /* Query.swift in Sources */,
 				BEB669911F464A940061B9A7 /* GraphQL.Field.swift in Sources */,
 				BEB669951F464ADA0061B9A7 /* GraphQL.Selection.swift in Sources */,
@@ -329,6 +336,7 @@
 				BEB6698A1F4529EA0061B9A7 /* GraphQL.VariableTests.swift in Sources */,
 				BE101C721F535E5400FEB1A4 /* ProjectionTests.swift in Sources */,
 				BE101C651F52053900FEB1A4 /* GraphQL.OperationTests.swift in Sources */,
+				BED7BFE41F583C65008058E2 /* RequestTests.swift in Sources */,
 				BEB6698F1F452CA90061B9A7 /* GraphQL.ValueTests.swift in Sources */,
 				BEB6699B1F464B4C0061B9A7 /* GraphQL.FieldTests.swift in Sources */,
 			);

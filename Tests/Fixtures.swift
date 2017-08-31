@@ -1,3 +1,4 @@
+import PersistQL
 import Schemata
 
 // MARK: - Book
@@ -50,6 +51,17 @@ extension Book: Model {
         \.title ~ "title",
         \.author ~ "author"
     )
+}
+
+extension Book {
+    static func with(title: String) -> Query<Book> {
+        return Query(
+            name: "book",
+            arguments: [
+                "title": .string(title),
+            ]
+        )
+    }
 }
 
 
@@ -127,6 +139,14 @@ extension BookViewModel: ModelProjection {
         \.title,
         \.author.id,
         \.author.name
+    )
+}
+
+extension BookViewModel {
+    static let theMartianChronicles = BookViewModel(
+        title: "The Martian Chronicles",
+        authorID: Author.ID("ray-bradbury"),
+        authorName: "Ray Bradbury"
     )
 }
 

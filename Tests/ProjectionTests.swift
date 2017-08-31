@@ -19,12 +19,7 @@ class ProjectionSelectionSetTests: XCTestCase {
 
 class ProjectionValueForJSONTests: XCTestCase {
     func testToOne() {
-        let expected = BookViewModel(
-            title: "The Martian Chronicles",
-            authorID: Author.ID("ray-bradbury"),
-            authorName: "Ray Bradbury"
-        )
-        
+        let expected = BookViewModel.theMartianChronicles
         let json: Any = [
             "title": expected.title,
             "author": [
