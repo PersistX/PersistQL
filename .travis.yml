@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode9.2
+branches:
+  only:
+    - master
+script: script/cibuild "$TRAVIS_XCODE_WORKSPACE" "$TRAVIS_XCODE_SCHEME" "$XCODE_ACTION"
+xcode_workspace: PersistQL.xcworkspace
+matrix:
+  include:
+    - xcode_scheme: PersistQL
+      env: XCODE_ACTION="build-for-testing test-without-building"
+notifications:
+  email: false
