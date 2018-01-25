@@ -36,7 +36,7 @@ final class Author {
     let books: Set<Book>
 }
 
-extension Author {
+extension Author: Model {
   static let schema = Schema(
     Author.init,
     \.id ~ "id",
